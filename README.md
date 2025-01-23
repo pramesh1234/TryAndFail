@@ -1,8 +1,16 @@
+## Project Overview
 
-The project follows Clean Architecture principles, incorporating ViewModel for state management, Hilt for dependency injection, Jetpack Compose for UI implementation, and Retrofit for networking. It consists of two primary screens:
+This project follows **Clean Architecture** principles and utilizes the following technologies:
 
-Home Screen
-This screen displays a list of anime, including their name, image, and rating. A LazyColumn is used to populate the list with data retrieved from an API call.
+- **ViewModel** for state management
+- **Hilt** for dependency injection
+- **Jetpack Compose** for UI implementation
+- **Retrofit** for networking
 
-Detail Screen
-This screen presents detailed information about the anime selected by the user on the Home Screen. Although the detail includes a YouTube embedded URL, it is not supported by the native ExoPlayer. While creating a custom player is under consideration, it will take time. For now, the screen displays the anime's poster image.
+The app consists of two main screens:
+
+### Home Screen
+The **Home Screen** displays a list of anime with their **name**, **image**, and **rating**. The list is populated using a **LazyColumn**, with data fetched from an API.
+
+### Detail Screen
+The **Detail Screen** shows detailed information about the anime selected on the **Home Screen**. Although a YouTube embedded URL is included, it isn't supported by the native **ExoPlayer**. A custom player will be implemented in the future, but currently, the screen shows the anime's **poster image**.
